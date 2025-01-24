@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Masonry</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .gallery {
+            column-count: 3;
+            column-gap: 15px;
+            padding: 15px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .gallery img {
+            width: 100%;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .gallery {
+                column-count: 2;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery {
+                column-count: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align: center; padding: 20px;">Celeste Fotos</h1>
+
+    <div class="gallery">
+        <img src="img/celesteg1.jpg" alt="Foto 1">
+        <img src="img/celesteg2.jpg" alt="Foto 2">
+        <img src="img/celesteg3.jpg" alt="Foto 3">
+        <img src="img/celesteg4.jpg" alt="Foto 4">
+        <img src="img/celesteg5.jpg" alt="Foto 5">
+        <img src="img/celesteg6.jpg" alt="Foto 6">
+    </div>
+
+</body>
+</html>
